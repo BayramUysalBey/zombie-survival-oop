@@ -1,7 +1,11 @@
 import random
 import time
+from datetime import datetime
 from timer_module import timer
 import logging
+from flask import Flask, jsonify
+
+app = Flask(__name__)
 
 logging.basicConfig(filename="zombie.log", level=logging.INFO)
 
@@ -146,6 +150,27 @@ class AngryZombie(Zombie):
             person.take_damage(10)
         time.sleep(1.5)
         return f"{self.name} {action}es you with rage! Your health: {person.health}"
+    
+@app.route('/scores')
+def get_scores():
+    """API endpoint to get current player stats"""
+    return jsonify({
+        "player": game_player.name,
+        "health": game_player.health,
+        "score": game_player.scores,
+        "active_zombies": len(game_zombies)
+    })
+
+if __name__ == "__main__":
+    # Initialize game state
+    game_player = Person("Jonathan")
+    game_zombies = [
+        Zombie("Crawler"),
+        BossZombie(),
+        FastZombie(),
+        TankZombie(),
+        AngryZombie()
+    ]
 
 # Example Usage:
 person = Person("Jonathan")
@@ -184,21 +209,10 @@ print("-" * 20)
 print(normal_zombie.move())		# Logs to zombie.log & returns message
 print("-" * 20)
 print(normal_zombie.zombie_take_damage())
+print("-" * 20)
 
+print(game_player.attack(game_zombies[0]))
+print(game_zombies[0].attack_human(game_player))
+print(game_player.calculate_score(game_zombies[0]))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+app.run(debug=True)
