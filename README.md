@@ -17,3 +17,20 @@ Zombie movements are logged to `zombie.log`:
 1. Install requirements:
 ```bash
 pip install -r requirements.txt
+
+## API Documentation 🚀
+
+The Zombie Survival Simulator now includes a basic REST API to track game progress in real-time.
+
+### Endpoints
+
+#### GET `/scores`
+**Returns current player stats**  
+```json
+{
+  "player": "string",
+  "health": int,
+  "score": int,
+  "active_zombies": int 
+}
+
