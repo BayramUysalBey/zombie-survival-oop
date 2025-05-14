@@ -1,2 +1,5 @@
 python>=3.8  # Minimum Python version
+<<<<<<< HEAD
 flask>=2.0.1
+=======
+>>>>>>> c508a643d4b6178ff248df8628cff5535712ca5b
