@@ -6,3 +6,33 @@ INFO:werkzeug: * Restarting with stat
 INFO:root:Crawler moved at 2025-05-14 13:45:05
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 989-223-440
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 14:09:36] "GET /scores HTTP/1.1" 200 -
+INFO:root:Crawler moved at 2025-05-15 17:34:55
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Crawler moved at 2025-05-15 17:35:12
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 989-223-440
+INFO:root:Crawler moved at 2025-05-16 11:36:39
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Crawler moved at 2025-05-16 11:36:56
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 989-223-440
+INFO:root:Crawler moved at 2025-05-16 16:19:58
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Crawler moved at 2025-05-16 16:20:15
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-476-715
+INFO:werkzeug: * Detected change in 'd:\\zombie-survival-oop\\zombie_survival.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Crawler moved at 2025-05-16 16:24:00
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 141-476-715

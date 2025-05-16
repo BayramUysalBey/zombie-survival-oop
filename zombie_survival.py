@@ -161,6 +161,10 @@ def get_scores():
         "active_zombies": len(game_zombies)
     })
 
+@app.route("/zombie")  
+def zombie():  
+    return {"type": "Crawler", "health": 100}  
+
 if __name__ == "__main__":
     # Initialize game state
     game_player = Person("Jonathan")
@@ -214,5 +218,6 @@ print("-" * 20)
 print(game_player.attack(game_zombies[0]))
 print(game_zombies[0].attack_human(game_player))
 print(game_player.calculate_score(game_zombies[0]))
+print(zombie())
 
 app.run(debug=True)
