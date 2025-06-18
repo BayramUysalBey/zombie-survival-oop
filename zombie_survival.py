@@ -169,6 +169,13 @@ def zombie():
 def list_zombies():  
     return {"zombies": ["Crawler", "Boss", "Tank", "Fast", "Angry"]}
 
+@app.route('/zombies/<name>', methods=['GET'])  
+def get_zombie(name):  
+    for zombie in zombies:  
+        if zombie.name == name:  
+            return jsonify(zombie.stats)  # Return OOP data as JSON  
+    return jsonify({"error": "Zombie not found"}), 404
+
 if __name__ == "__main__":
     # Initialize game state
     game_player = Person("Jonathan")
